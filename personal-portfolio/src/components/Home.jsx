@@ -14,36 +14,36 @@ const Home = () => {
                 </h2>
                 <p className="text-gray-500 py-4 max-w-md" >
                     I am a Full Stack Developer with strong foundation in web development technologies.
-                    While I am committed to learning and growing in this field. I enjoy tackling challenging 
+                    I am committed to learning and growing in this field. I enjoy tackling challenging 
                     problems and bringing ideas to life through innovative solutions. My goal is to contribute
                     my knowledge and skills to a dynamic team and make a positive impact in the world of technology.
 
                 </p>
                 <div>
-                    <button className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointers" >
-                      Projects  
+            <Link
+              to="portfolio"
+              smooth
+              duration={500}
+              className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
+            >
+              Portfolio
+              <span className="group-hover:rotate-90 duration-300">
+                <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
+              </span>
+            </Link>
+          </div>
+        </div>
 
-                      <span className="group-hover:rotate-90 duration-300">
-                      <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
-                    </span>
-
-                    </button>
-                   
-                </div>
-
-
-            </div>
-            <div>
-                <img
-                src={HeroImage}
+        <div>
+          <img
+            src={HeroImage}
             alt="my profile"
-            className="rounded-2xl mx-auto w-2/3 md:w-full scale-75"
-                />
-                
-            </div>
+            className="rounded-2xl mx-auto w-2/3 md:w-full"
+          />
         </div>
-        </div>
+      </div>
+    </div>
   );
 };
 
-export default Home
+export default Home;
